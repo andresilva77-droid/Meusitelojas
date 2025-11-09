@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <title>OPENCOMMERCE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        body {
+            background-color: #f4f7fa;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: #234b7d;
+            margin: 0;
+        }
+        header {
+            background-color: #234b7d;
+            padding: 32px 0 20px 0;
+            text-align: center;
+        }
+        .logo-site {
+            width: 270px;
+            height: 270px;
+            margin: 0 auto;
+            display: block;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 2px 16px #1659bc44;
+            background: #fff;
+        }
+        .produtos {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            gap: 32px;
+            padding: 40px 20px;
+            overflow-x: auto;
+        }
+        .produto {
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 2px 8px rgba(35,75,125,0.07);
+            width: 260px;
+            flex: 0 0 auto;
+            text-align: center;
+            padding: 18px 14px;
+            transition: box-shadow 0.3s;
+        }
+        .produto:hover {
+            box-shadow: 0 4px 16px rgba(35,75,125,0.14);
+        }
+        .produto img {
+            width: 180px;
+            height: 180px;
+            object-fit: contain;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            background: #e3ebf6;
+        }
+        .produto h2 {
+            font-size: 1.14em;
+            margin: 10px 0 6px 0;
+        }
+        .produto .preco {
+            color: #0060b6;
+            font-weight: 600;
+            margin-bottom: 4px;
+            font-size: 1.16em;
+        }
+        .produto .link {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 8px;
+            background: #234b7d;
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.96em;
+            margin-top: 6px;
+            transition: background 0.3s;
+        }
+        .produto .link:hover {
+            background: #2e65b3;
+        }
+        footer {
+            background: #234b7d;
+            color: #fff;
+            text-align: center;
+            padding: 18px 12px;
+        }
+        .redes-sociais {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+        }
+        .redes-sociais a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.04em;
+            padding: 6px 10px;
+            border-radius: 6px;
+            background: #3a78c2;
+            transition: background 0.2s, color 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 7px;
+        }
+        .redes-sociais a:hover {
+            background: #5a95de;
+            color: #ffffff;
+        }
+        .redes-sociais img {
+            height: 28px;
+            width: 28px;
+            object-fit: contain;
+        }
+        @media (max-width: 800px) {
+            .produtos {
+                flex-wrap: wrap;
+                justify-content: center;
+                overflow-x: visible;
+            }
+            .produto {
+                width: 90%;
+                max-width: 400px;
+            }
+            .logo-site {
+                width: 160px;
+                height: 160px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo-site" src="opeen.jpeg" alt="Logo OPENCOMMERCE" />
+    </header>
+    <main>
+        <section class="produtos">
+            <div class="produto">
+                <img src="arv.jpg" alt="Árvore de Natal Luxo" />
+                <h2>Árvore de Natal 2,10m Luxo Galhos Bem Cheia Pinheiro Verde</h2>
+                <div class="preco">R$399,99</div>
+                <a class="link" href="https://produto.mercadolivre.com.br/MLB-4292136455-arvore-de-natal-210m-luxo-galhos-bem-cheia-pinheiro-verde-_JM" target="_blank">Ver na Mercado Livre</a>
+            </div>
+            <div class="produto">
+                <img src="dima.jpg" alt="Jogo de Taças Diamond" />
+                <h2>Jogo 6 Taças de Vidro 325ml Kit Luxo Suco Vinho Água Diamond</h2>
+                <div class="preco">R$59,98</div>
+                <a class="link" href="https://produto.mercadolivre.com.br/MLB-5914875730-jogo-6-tacas-de-vidro-325ml-kit-luxo-suco-vinho-agua-diamond-_JM" target="_blank">Ver na Mercado Livre</a>
+            </div>
+            <div class="produto">
+                <img src="joias.jpg" alt="Pote Organizador de Joias" />
+                <h2>Pote com tampa porta joias Organizador Bijuterias Multiuso Compacto Sortido</h2>
+                <div class="preco">R$19,99</div>
+                <a class="link" href="https://shopee.com.br/product/1645994120/22394541739" target="_blank">Ver na Shopee</a>
+            </div>
+            <div class="produto">
+                <img src="arv1.jpg" alt="Árvore Natal Shopee" />
+                <h2>Árvore de Natal Pinheiro Verde 2,10m - 1.100 Galhos Realistas</h2>
+                <div class="preco">R$367,49</div>
+                <a class="link" href="https://shopee.com.br/product/1645994120/23999128403" target="_blank">Ver na Shopee</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h3>Minhas lojas e redes sociais</h3>
+        <div class="redes-sociais">
+            <a href="https://www.youtube.com/@OpenCommercePrime" target="_blank">
+                <img src="yy.svg" alt="YouTube">YouTube
+            </a>
+            <a href="https://www.tiktok.com/@opencommerce?_r=1&_t=ZS-91GABpFCJ3S" target="_blank">
+                <img src="tiktok.svg" alt="TikTok">TikTok
+            </a>
+            <a href="https://shopee.com.br/shop/1645994120" target="_blank">
+                <img src="shp.svg" alt="Shopee">Shopee
+            </a>
+            <a href="https://www.mercadolivre.com.br/minha-pagina/editor#menu-user" target="_blank">
+                <img src="mercadopago.svg" alt="Mercado Livre">Mercado Livre
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
